@@ -8,9 +8,6 @@ a.heading {
     color: white;
     padding: 14px 16px;
 }
-div {
-    color: black;
-}
 table {
     margin-right: auto;
     margin-left: auto;
@@ -22,5 +19,5 @@ tr, td {
     border: 1px solid black;
 }
 img {
-    float: left;
+    float: right;
 }
