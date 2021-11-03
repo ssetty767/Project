@@ -3,6 +3,8 @@
     background-color: black;
     text-decoration: none;
     overflow: hidden;
+    padding: 14px 16px;
+    color: white; 
 }
 a.heading {
     color: white;
