@@ -4,10 +4,10 @@
     text-decoration: none;
     overflow: hidden;
     padding: 14px 16px;
-    color: white; 
 }
 a.heading {
     color: white;
+    padding: 14px 16px;
 }
 table {
     margin-right: auto;
