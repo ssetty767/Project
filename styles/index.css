@@ -34,3 +34,6 @@ tr, td {
 img {
     float: right;
 }
+body {
+    background-color: darkblue;
+}
