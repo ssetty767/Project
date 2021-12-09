@@ -22,10 +22,12 @@
         padding: 0;
         overflow: hidden;
         background-color: #666;
+        text-align: left;
     }
   
     li {
         float: left;
+        margin-bottom: 10px;
     }
   
     li a {
@@ -39,7 +41,39 @@
     li a:hover {
         background-color: #111;
     }
-    </style>
+
+    body {
+          font-family: Helvetica, sans-serif;
+          font-size: 1.2rem;
+      }
+
+    img {
+          border: 5px solid navy;
+          margin-bottom: 20px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          height: 300px;
+      }
+
+    .center {
+          text-align: center;
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+    p {
+          text-align: left;
+      }
+
+    button {
+          margin-right: 20px;
+          background-color: White;
+          height: 50px;
+          width: 120px;
+      }
+  </style>
 </head>
 <body>
     <div class="heading">
@@ -52,7 +86,42 @@
             <li><a href="us.html">Cricket in the US</a></li>
         </ul>
     </div>
+    <h1>Batting</h1>
+    <p>Batting is one of the key aspects of cricket. In order to set a high target for the opposition or 
+        chase down a tough total, you must score runs. Batters can use a variety of shots in order to get runs. 
+        Here are some of them:
+    </p>
+
+    <div class="center">
+        <img
+          alt="Image Goes Here"
+          src="images/drive.jpeg"
+          title="Batter Hitting"
+          id="batterimage"
+        />
+    </div>
+
+    <div class="center">
+        <button id="drive">Drive</button>
+        <button id="defend">Defend</button>
+        <button id="sweep">Sweep</button>
+        <button id="flick">Flick</button>
+    </div>
 
     <a href="sitemap.html">Sitemap</a>
+    <script>
+        drive.onclick = function pictureChange() {
+        document.getElementById ("batterimage").src="images/drive.jpeg"
+        }
+        defend.onclick = function pictureChange() {
+        document.getElementById ("batterimage").src="images/defend.jpeg"
+        }
+        sweep.onclick = function pictureChange() {
+        document.getElementById ("batterimage").src="images/sweep.jpeg"
+        }
+        flick.onclick = function pictureChange() {
+        document.getElementById ("batterimage").src="images/flick.jpeg"
+        }
+    </script>
 </body>
 </html>
