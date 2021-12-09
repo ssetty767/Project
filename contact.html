@@ -82,5 +82,16 @@
         </form>
     </fieldset>
     <a href="sitemap.html">Sitemap</a>
+
+<script>
+    let firstname = document.getElementById("fname").value;
+    let lastname = document.getElementById("lname").value;
+    let emailvalue = document.getElementById("email").value;
+    if (firstname == "" || lastname == "" || emailvalue == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+</script>
+
 </body>
 </html>
