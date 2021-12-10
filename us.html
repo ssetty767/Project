@@ -64,9 +64,17 @@
         but there has been steady increase in the quality of talent and playing over the years. 
         The United States team played in the World Cup qualifiers this year, but didn't make it to the league stage.</p>
     <p>
-        The jersey colors for the cricket national team are very similiar to other national sports. Here's what they look like (hover over to zoom in):
+        The jersey colors for the cricket national team are very similiar to other national sports. Here's what they look like (hover over to see the details):
     </p>
     <img src="images/usacricketjersey.jpeg" alt="cricket jersey" id="cricketjersey" class="cricketjersey" height="300" width="300">
+    <br>
+    <br>
+    <p>The US has a long way to go before it is the same realm as cricket heavyweight countries like India or Australia,
+        but it's encouraging to see the growth and development of the sport here. I hope it only continues to get stronger, 
+        and one day hope to see the US win the cricket world cup!
+    </p>
+    <br>
+    <img src="images/uscricketlogo.png" alt="cricket logo" id="cricketlogo" height="300" width="300">
     <br>
     <br>
     <a href="sitemap.html">Sitemap</a>
@@ -85,6 +93,17 @@
       document.getElementById("cricketjersey").
         onmouseout = shrinkImage;
       
+    let images = ['images/uscricketlogo.png','images/cricketimg.jpeg','images/cricketimg2.jpg'],i=0;
+    setTimeout(function(){
+        changeImage(images[i]);
+        i++;
+        if(i>images.length)
+            i=0;
+        },3000);
+    
+    window.onload=function changeImage() {
+        document.getElementById("cricketlogo").src = images;
+    }
     </script>
 </body>
 </html>
