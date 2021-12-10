@@ -38,6 +38,13 @@
     li a:hover {
         background-color: #111;
     }
+
+    .cricketjersey {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
     </style>
 </head>
 <body>
@@ -51,7 +58,31 @@
             <li><a href="us.html">Cricket in the US</a></li>
         </ul>
     </div>
-
+    <h1>Cricket in the USA</h1>
+    <br>
+    <p>The United States cricket team definitely isn't one of the heavyweights in the world, 
+        but there has been steady increase in the quality of talent and playing over the years. 
+        The United States team played in the World Cup qualifiers this year, but didn't make it to the league stage.</p>
+    <p>
+        The jersey colors for the cricket national team are very similiar to other national sports.
+    </p>
+    <img src="images/usacricketjersey.jpeg" alt="cricket jersey" id="cricketjersey" class="cricketjersey">
     <a href="sitemap.html">Sitemap</a>
+
+    <script>
+        function increaseImage() {
+        document.getElementById("cricketjersey").style.transform = "scale(1.75)";
+      }
+      function shrinkImage() {
+        document.getElementById("cricketjersey").style.transform = "scale(1)";
+      }
+
+      document.getElementById("cricketjersey").
+        onmouseover = increaseImage;
+
+      document.getElementById("cricketjersey").
+        onmouseout = shrinkImage;
+      
+    </script>
 </body>
 </html>
