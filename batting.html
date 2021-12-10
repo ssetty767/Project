@@ -100,7 +100,9 @@
           id="batterimage"
         />
     </div>
-
+    <br>
+    <p id="description">This shot is played by swinging the bat in a vertical arc through the line of the ball, hitting the ball usually diagonally in front of the batting player along the ground.</p>
+    <br>
     <div class="center">
         <button id="drive">Drive</button>
         <button id="defend">Defend</button>
@@ -115,18 +117,23 @@
     <script>
         drive.onclick = function pictureChange() {
         document.getElementById ("batterimage").src="images/drive.jpeg"
+        document.getElementById ("description").innerHTML="This shot is played by swinging the bat in a vertical arc through the line of the ball, hitting the ball usually diagonally in front of the batting player along the ground."
         }
         defend.onclick = function pictureChange() {
         document.getElementById ("batterimage").src="images/defend.jpeg"
+        document.getElementById ("description").innerHTML="This shot is usually a purely defensive stroke designed to stop the ball from hitting the wicket or the batting player's body."
         }
         sweep.onclick = function pictureChange() {
         document.getElementById ("batterimage").src="images/sweep.jpeg"
+        document.getElementById ("description").innerHTML="This shot is a front foot shot played to a low bouncing ball. It is performed by swinging the bat around in a horizontal arc near the pitch as the ball arrives."
         }
         flick.onclick = function pictureChange() {
         document.getElementById ("batterimage").src="images/flick.jpeg"
+        document.getElementById ("description").innerHTML="The shot is played with the bat coming through straight as if to push forward, but the bat face is angled towards the leg side."
         }
         pull.onclick = function pictureChange() {
         document.getElementById ("batterimage").src="images/pull.jpeg"
+        document.getElementById ("description").innerHTML="This is a cross-batted shot played to a ball bouncing around waist height by swinging the bat in a horizontal arc in front of the body,'pulling' the shot towards the boundary."
         }
     </script>
 </body>
